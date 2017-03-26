@@ -50,7 +50,7 @@ public class JedisManager {
             Log.e(TAG, "Not connected");
             return;
         }
-        jedis.lset("fire", 0, "1");
+        jedis.set("fire", "1");
     }
 
     public String ping() {
