@@ -9,28 +9,76 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.egyed.adam.laststandvr_controller.MainActivity">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="3"
-        android:rowCount="1">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/testButtonText"
-            android:id="@+id/testGyroButton"
-            android:onClick="startGyroTest"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test Redis"
-            android:id="@+id/testRedisButton"
-            android:onClick="startRedisTest"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2" />
-    </GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/testGyroButtonText"
+        android:id="@+id/testGyroButton"
+        android:onClick="startGyroTest"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/testRedisButton"
+        android:layout_toStartOf="@+id/testRedisButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Redis"
+        android:id="@+id/testRedisButton"
+        android:onClick="startRedisTest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/portEditText"
+        android:layout_alignEnd="@+id/portEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IP Address:"
+        android:id="@+id/ipAddressView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipEditText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ipAddressView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="10.10.180.94" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Port:"
+        android:id="@+id/portView"
+        android:layout_below="@+id/ipEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portEditText"
+        android:layout_alignTop="@+id/portView"
+        android:layout_alignRight="@+id/ipEditText"
+        android:layout_alignEnd="@+id/ipEditText"
+        android:layout_alignLeft="@+id/ipEditText"
+        android:layout_alignStart="@+id/ipEditText"
+        android:text="6379" />
 
 </RelativeLayout>

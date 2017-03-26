@@ -37,6 +37,7 @@ public class RedisTestActivity extends AppCompatActivity {
             EditText portEditText = (EditText)findViewById(R.id.portEditText);
             int port = Integer.valueOf(portEditText.getText().toString());
             jm.connect(ip, port);
+            jm.ping();
             Toast toast = Toast.makeText(getApplicationContext(), "Succesfully connected", Toast.LENGTH_SHORT);
             toast.show();
             connected = true;
@@ -44,6 +45,7 @@ public class RedisTestActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(getApplicationContext(), "Failed to connect", Toast.LENGTH_SHORT);
             toast.show();
             connected = false;
+            Log.e(TAG,"Exception caught: \n"+e.getMessage());
         }
 
 

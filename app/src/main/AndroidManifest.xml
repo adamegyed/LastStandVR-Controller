@@ -31,7 +31,10 @@
             >
         </activity>
         <activity android:name=".ExternalDemoActivity" />
-        <activity android:name=".RedisTestActivity"></activity>
+        <activity android:name=".RedisTestActivity" />
+        <activity android:name=".ControllerActivity"
+            android:screenOrientation="sensorLandscape">
+        </activity>
     </application>
 
 </manifest>
