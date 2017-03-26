@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.egyed.adam.laststandvr_controller">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -31,7 +30,8 @@
                 android:value=".MainActivity" />
             >
         </activity>
-        <activity android:name=".ExternalDemoActivity"></activity>
+        <activity android:name=".ExternalDemoActivity" />
+        <activity android:name=".RedisTestActivity"></activity>
     </application>
 
 </manifest>

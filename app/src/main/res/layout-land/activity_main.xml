@@ -18,13 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/testButtonText"
-            android:id="@+id/testButton"
+            android:id="@+id/testGyroButton"
             android:onClick="startGyroTest"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button1" />
+            android:text="Test Redis"
+            android:id="@+id/testRedisButton"
+            android:onClick="startRedisTest"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

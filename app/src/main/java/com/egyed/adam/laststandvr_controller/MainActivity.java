@@ -14,8 +14,9 @@ public class MainActivity extends AppCompatActivity implements Runnable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Thread thread = new Thread();
-        thread.start();
+        //thread.start();
     }
 
     public void run() {
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity implements Runnable {
 
     public void startGyroTest(View view) {
         Intent intent = new Intent(this, GyroTestActivity.class);
+        startActivity(intent);
+    }
+
+    public void startRedisTest(View view) {
+        Intent intent = new Intent(this, RedisTestActivity.class);
         startActivity(intent);
     }
 }

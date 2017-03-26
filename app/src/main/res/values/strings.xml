@@ -2,4 +2,8 @@
     <string name="app_name">LastStandVR Controller</string>
     <string name="testButtonText">Start Test</string>
     <string name="calibrateButtonText">Calibrate</string>
+    <string name="ip_address">IP Address:</string>
+    <string name="port">Port</string>
+    <string name="ping">Ping</string>
+    <string name="connect">Connect</string>
 </resources>

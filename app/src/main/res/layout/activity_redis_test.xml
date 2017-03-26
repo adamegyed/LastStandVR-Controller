@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.egyed.adam.laststandvr_controller.RedisTestActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_address"
+        android:id="@+id/ipView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipEditText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ipView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="10.10.180.94"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port"
+        android:id="@+id/portView"
+        android:layout_below="@+id/ipEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portEditText"
+        android:layout_alignTop="@+id/portView"
+        android:layout_alignLeft="@+id/ipEditText"
+        android:layout_alignStart="@+id/ipEditText"
+        android:layout_alignRight="@+id/ipEditText"
+        android:layout_alignEnd="@+id/ipEditText"
+        android:text="6379"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ping"
+        android:id="@+id/pingButton"
+        android:onClick="ping"
+        android:layout_below="@+id/connectButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:id="@+id/connectButton"
+        android:layout_below="@+id/portEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="connect"/>
+</RelativeLayout>
