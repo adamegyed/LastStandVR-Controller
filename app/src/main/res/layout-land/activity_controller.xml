@@ -16,7 +16,8 @@
         android:id="@+id/fireButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="fire"/>
 
     <Button
         android:layout_width="wrap_content"

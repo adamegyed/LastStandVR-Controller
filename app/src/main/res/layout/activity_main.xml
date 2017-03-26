@@ -17,7 +17,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/testButtonText"
+            android:text="@string/testGyroButtonText"
             android:id="@+id/testButton"
             android:onClick="startGyroTest"/>
         <Button
