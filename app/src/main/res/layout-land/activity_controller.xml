@@ -9,4 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.egyed.adam.laststandvr_controller.ControllerActivity">
 
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:text="Fire!!!"
+        android:id="@+id/fireButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calibrate"
+        android:id="@+id/contCalibrateButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/fireButton"
+        android:layout_alignStart="@+id/fireButton"
+        android:onClick="calibrate"/>
 </RelativeLayout>
