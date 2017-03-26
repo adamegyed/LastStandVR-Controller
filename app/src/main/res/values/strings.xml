@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">LastStandVR-Controller</string>
+    <string name="app_name">LastStandVR Controller</string>
+    <string name="testButtonText">Start Test</string>
+    <string name="calibrateButtonText">Calibrate</string>
 </resources>
